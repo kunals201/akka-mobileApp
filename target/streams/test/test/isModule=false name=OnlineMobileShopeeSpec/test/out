@@ -1,0 +1,22 @@
+[0m[[0minfo[0m] [0m[32mOnlineMobileShopeeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mA Validate [0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with Error message in case customer request to buy more than 1 item[0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with success message when stock is not empty[0m[0m
+[0m[[0minfo[0m] [0m[32m- must Reply with 'Out Of Stock' if phones are out of  stock[0m[0m
+[0m[[0minfo[0m] [0m[32mPurchaseActor[0m[0m
+[0m[[0minfo[0m] [0m[32m- must respond with error message in case of wrong request[0m[0m
+[0m[[0minfo[0m] [0m[31m- must respond with if control is going to purchase handler *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Purchase Actor will tell to PurchaseHandler[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:387)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:364)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:814)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at OnlineMobileShopeeSpec$$anonfun$2$$anonfun$apply$mcV$sp$8.apply(OnlineMobileShopeeSpec.scala:71)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at OnlineMobileShopeeSpec$$anonfun$2$$anonfun$apply$mcV$sp$8.apply(OnlineMobileShopeeSpec.scala:68)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32mPurchaseHandler[0m[0m
+[0m[[0minfo[0m] [0m[32m- must Reply with the same message it receives after telling[0m[0m
